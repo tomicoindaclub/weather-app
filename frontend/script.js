@@ -1,6 +1,7 @@
 const rootElement = document.querySelector("#root");
 const weatherApiKey = "f50f14781afc48d0959123718221510";
 const imageApiKey = "563492ad6f917000010000019fe6895bc4de4b2f816d02c64408d69f";
+let cityName = "";
 
 async function fetchData(url) {
   const response = await fetch(url);
@@ -9,18 +10,21 @@ async function fetchData(url) {
 }
 
 async function getSearchData() {
-  let input = document.getElementById("input-name");
-  let cityName = input.value.toUpperCase();
+  let inputField = document.getElementById("input-name");
+  let input = inputField.value.toUpperCase();
+  cityName = input;
   filteredCity = [];
   let data = await fetchData(
-    `https://api.weatherapi.com/v1/search.json?key=${apiKey}&q=${cityName}&aqi=no`
+    `https://api.weatherapi.com/v1/search.json?key=${weatherApiKey}&q=${cityName}&aqi=no`
   );
+  console.log(data);
+
   for (let i = 0; i < data.length; i++) {
     if (data[i].name.toUpperCase().indexOf(cityName) > -1) {
-      data[i].name.push(filteredCity);
+      filteredCity.push(data[i].name);
     }
   }
-  console.log(cityName);
+  console.log(input);
   console.log(filteredCity);
 }
 
