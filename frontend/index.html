@@ -8,5 +8,17 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div id="root">
+      <form>
+        <!-- <label for="input-name">Name: </label> for="" ide csak inputnak id-ja mehet -->
+        <input
+          id="input-name"
+          placeholder="Choose your character's name!"
+          type="text"
+          onkeyup="getSearchData()"
+        />
+      </form>
+    </div>
+  </body>
 </html>
