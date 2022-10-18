@@ -7,6 +7,12 @@
         <title>Weather App</title>
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <div id="root">
@@ -30,11 +36,22 @@
                     </div>
                 </header>
                 <div class="block">
-                  <h2>Budapest</h2>
-                  <div class="weather">
-                    <div class="widget"></div>
-                    <div class="info"></div>
-                  </div>
+                    <h2>Budapest</h2>
+
+                    <div class="weather">
+                        <div class="widget">
+                          <div class="widget-info"></div>
+                        </div>
+                        <div class="info">
+                          <p>Wind</p>
+                          <hr>
+                          <p>Humidity</p>
+                          <hr>
+                          <p>Chance of Rain</p>
+                          <hr>
+                          <p>Air Quality</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
