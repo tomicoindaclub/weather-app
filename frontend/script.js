@@ -8,29 +8,6 @@ async function fetchData(url) {
   return responseJson;
 }
 
-async function getWeatherData() {
-  let data = await fetchData(
-    `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${cityName}&aqi=no`
-  );
-  console.log("weather : ", data);
-}
-
-async function getCityImage() {
-  const response = await fetch(
-    `https://api.pexels.com/v1/search?query=nature&per_page=1`,
-    {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        Authorization: `${imageApiKey}`,
-      },
-    }
-  );
-  let imageData = await response.json();
-  let imageUrl = imageData.photos[0].src.original;
-  console.log(imageUrl);
-}
-
 async function getSearchData() {
   let input = document.getElementById("input-name");
   let cityName = input.value.toUpperCase();
@@ -45,6 +22,29 @@ async function getSearchData() {
   }
   console.log(cityName);
   console.log(filteredCity);
+}
+
+async function getWeatherData() {
+  let data = await fetchData(
+    `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${cityName}&aqi=no`
+  );
+  console.log("weather : ", data);
+}
+
+async function getCityImage() {
+  const response = await fetch(
+    `https://api.pexels.com/v1/search?query=${cityName}&per_page=1`,
+    {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        Authorization: `${imageApiKey}`,
+      },
+    }
+  );
+  let imageData = await response.json();
+  let imageUrl = imageData.photos[0].src.original;
+  console.log(imageUrl);
 }
 
 window.addEventListener("load", getWeatherData);
