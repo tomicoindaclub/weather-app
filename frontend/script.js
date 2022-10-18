@@ -1,5 +1,3 @@
-import { createClient } from "pexels";
-
 const rootElement = document.querySelector("#root");
 const weatherApiKey = "f50f14781afc48d0959123718221510";
 const imageApiKey = "563492ad6f917000010000019fe6895bc4de4b2f816d02c64408d69f";
@@ -18,12 +16,19 @@ async function getWeatherData() {
 }
 
 async function getCityImage() {
-  const client = createClient(`${imageApiKey}`);
-  const query = "Nature";
-
-  client.photos.search({ query, per_page: 1 }).then((photos) => {
-    console.log(photos);
-  });
+  const response = await fetch(
+    `https://api.pexels.com/v1/search?query=nature&per_page=1`,
+    {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        Authorization: `${imageApiKey}`,
+      },
+    }
+  );
+  let imageData = await response.json();
+  let imageUrl = imageData.photos[0].src.original;
+  console.log(imageUrl);
 }
 
 async function getSearchData() {
