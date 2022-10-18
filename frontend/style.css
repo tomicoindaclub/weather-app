@@ -36,3 +36,119 @@ select {
 }
 
 /* --- end of CSS reset --- */
+
+#root {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 700px;
+  height: 500px;
+  background-color: aqua;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 670px;
+  height: 80px;
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
+.titleApp {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  padding-left: 10px;
+  color: white;
+}
+
+.logo {
+  background: transparent url(/img/logo.png) no-repeat center center;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+
+}
+
+.inputField {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  width: 220px;
+}
+
+input {
+  background-color: white;
+  height: 30px;
+  width: 100%;
+  border-radius: 10px 0px 0px 10px;
+  padding-left: 10px;
+}
+
+button {
+  background: rgb(211, 211, 211) url(https://cdn.discordapp.com/attachments/1025661742614851604/1031974539523010590/loupe.png) no-repeat center center;
+  background-size: 40%;
+  height: 30px;
+  width: 50px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.block {
+  width: 670px;
+  height: 350px;
+  background-color: blue;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget {
+ width: 200px;
+ height: 200px;
+ background-color: brown;
+ border-radius: 10px;
+}
+
+.info {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  border-radius: 10px;
+}
+
