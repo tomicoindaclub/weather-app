@@ -48,7 +48,7 @@ button.addEventListener("click", function () {
     dataHumidity.innerText = `${data.current.humidity} %`;
     dataPressure.innerText = `${data.current.pressure_in} in`;
     dataUV.innerText = `${data.current.uv}`;
-    dataTemp.innerText = `${data.current.temp_c} °C`;
+    dataTemp.innerText = `${data.current.temp_c}`;
     dataCityName.innerText = `${data.location.name}`;
     dataCountryName.innerText = `${data.location.country}`;
     weatherIcon.innerHTML = `<img src="https:${data.current.condition.icon}" />`;
