@@ -1,275 +1,288 @@
 /* --- start of CSS reset --- */
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-    background: transparent;
-    font-family: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a img {
-    border: none;
+  border: none;
 }
 
 button,
 a {
-    cursor: pointer;
-    color: inherit;
+  cursor: pointer;
+  color: inherit;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 button,
 textarea,
 select {
-    appearance: none !important;
-    border-radius: 0;
+  appearance: none !important;
+  border-radius: 0;
 }
 
 /* --- end of CSS reset --- */
 
 #root {
-    background: white url(https://wallpapercave.com/wp/Z4CD0Ic.jpg) no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #76afeb;
 }
 
 .container {
-    width: 740px;
-    height: 560px;
-    background: rgba(2, 15, 96, 0.575);
-    background: linear-gradient(90deg, rgba(2,14,96,0.575) 0%, rgba(9,9,177,0.575) 45%, rgba(0,95,255,0.575) 100%);
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: 1.3fr 4fr;
-    align-items: center;
-    justify-content: center;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(
+    243.33deg,
+    #007cff 0%,
+    rgba(0, 0, 0, 0.74) 100.44%
+  );
+  display: grid;
+  grid-template-rows: 1.3fr 4fr;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
-    width: 650px;
-    height: 80px;
-    background: rgb(2,109,150);
-    background: linear-gradient(90deg, rgb(2, 108, 150) 0%, rgb(9, 121, 177) 45%, rgb(0, 166, 255) 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
-    filter: drop-shadow(4px 7px 12px black);
+  width: 80vw;
+  height: 80px;
+  background: rgb(2, 109, 150);
+  background: linear-gradient(
+    90deg,
+    rgb(2, 108, 150) 0%,
+    rgb(9, 121, 177) 45%,
+    rgb(0, 166, 255) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  box-shadow: 8px 16px 20px 5px rgba(0, 0, 0, 0.25);
 }
 
 .titleApp {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 h1 {
-    padding-left: 10px;
-    color: white;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    font-size: x-large;
+  padding-left: 10px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: x-large;
 }
 
 .logo {
-    background: transparent url(/img/logo.png) no-repeat center center;
-    background-size: cover;
-    height: 60px;
-    width: 60px;
+  background: transparent url(/img/logo.png) no-repeat center center;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
 }
 
 .inputField {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 form {
-    width: 220px;
+  width: 220px;
 }
 
 input {
-    background-color: white;
-    height: 30px;
-    width: 100%;
-    border-radius: 5px 0px 0px 5px;
-    padding-left: 10px;
-    font-family: "Ubuntu", sans-serif;
+  background-color: white;
+  height: 30px;
+  width: 100%;
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 10px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 input::placeholder {
-    font-weight: 300;
-    font-style: italic;
+  font-weight: 300;
+  font-style: italic;
 }
 
 input[type="text"] {
-    font-style: normal;
-    font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
 }
 
 button {
-    background: rgb(211, 211, 211)
-        url(https://cdn.discordapp.com/attachments/1025661742614851604/1031974539523010590/loupe.png)
-        no-repeat center center;
-    background-size: 40%;
-    height: 30px;
-    width: 50px;
-    border-radius: 0px 5px 5px 0px;
+  background: rgb(211, 211, 211)
+    url(https://cdn.discordapp.com/attachments/1025661742614851604/1031974539523010590/loupe.png)
+    no-repeat center center;
+  background-size: 40%;
+  height: 30px;
+  width: 50px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .block {
-    width: 650px;
-    height: 350px;
-    background: rgb(2,109,150);
-    background: linear-gradient(90deg, rgb(2, 108, 150) 0%, rgb(9, 121, 177) 45%, rgb(0, 166, 255) 100%);
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-    align-items: center;
-    justify-content: center;
-    filter: drop-shadow(4px 7px 12px black);
+  width: 80vw;
+  height: 70vh;
+  background: rgb(2, 109, 150);
+  background: linear-gradient(
+    90deg,
+    rgb(2, 108, 150) 0%,
+    rgb(9, 121, 177) 45%,
+    rgb(0, 166, 255) 100%
+  );
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 8px 16px 20px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 4rem;
 }
 
 .weather {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    border-top: 2px solid white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  border-top: 2px solid white;
 }
 
 .city-country {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 65px;
 }
 
 .city-country p {
-    font-weight: 400;
-    font-size: large;
+  font-weight: 400;
+  font-size: 32px;
 }
 
 .widget {
-    width: 200px;
-    height: 200px;
-    background-color: transparent;
-    border-radius: 10px;
-    position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 8px 16px 20px 5px rgba(0, 0, 0, 0.25);
 }
 
 .widget img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    border-radius: inherit;
-    filter: opacity(80%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  border-radius: inherit;
+  filter: opacity(80%);
 }
 
 .widget-info {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border-radius: inherit;
-    display: grid;
-    grid-template-rows: 2fr 3fr;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.7));
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  background-color: transparent;
+  border-radius: inherit;
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .temp {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-    color: white;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-size: 200%;
-    width: 100%;
-    height: 100%;
-    padding-top: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 200%;
+  width: 100%;
+  height: 100%;
+  padding-top: 4rem;
 }
 
 .temp-data {
-    width: 100%;
-    height: 100%;
-    font-weight: 700;
-    font-size: 230%;
-    padding-right: 8px;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 230%;
+  padding-right: 8px;
 }
 
 .temp-unit {
-    position: relative;
-    top: -25px;
+  position: relative;
+  top: -25px;
 }
 
 .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .icon img {
-    height: 60%;
-    width: 60%;
-    filter: opacity(100%) drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.532));
+  height: 50%;
+  width: 50%;
+  filter: opacity(100%) drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.532));
 }
 
 .info {
-    width: 200px;
-    height: 200px;
-    background-color: rgba(0, 95, 139, 0.663);
-    border-radius: 10px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    line-height: 110%;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    font-size: large;
-    overflow: hidden;
+  width: 400px;
+  height: 400px;
+  background: rgba(118, 175, 235, 0.5);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 110%;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  overflow: hidden;
+  box-shadow: 8px 16px 20px 5px rgba(0, 0, 0, 0.25);
 }
 
 .info-title {
-    font-weight: 400;
-    font-size: medium;
+  font-weight: 400;
 }
 
 hr {
-    height: 2px;
-    width: 80%;
-    background-color: white;
-    margin-bottom: 5px;
-    margin-top: 5px;
+  height: 2px;
+  width: 80%;
+  background-color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
-
-
