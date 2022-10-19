@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Weather App</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <div id="root">
-            <div class="container">
-                <header>
-                    <div class="titleApp">
-                        <div class="logo"></div>
-                        <h1>Weather App</h1>
-                    </div>
-                    <div class="inputField">
-                        <form>
-                            <!-- <label for="input-name">Name: </label> for="" ide csak inputnak id-ja mehet -->
-                            <input
-                                id="input-name"
-                                placeholder="Write a city here..."
-                                type="text"
-                                onkeyup="getSearchData()"
-                            />
-                        </form>
-                        <button></button>
-                    </div>
-                </header>
-                <div class="block">
-                    <h2>Budapest</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <header>
+          <div class="titleApp">
+            <div class="logo"></div>
+            <h1>Weather App</h1>
+          </div>
+          <div class="inputField">
+            <form>
+              <!-- <label for="input-name">Name: </label> for="" ide csak inputnak id-ja mehet -->
+              <input
+                id="input-name"
+                placeholder="Write a city here..."
+                type="text"
+                onkeyup="getSearchData()"
+              />
+            </form>
+            <button></button>
+          </div>
+        </header>
+        <div class="block">
+          <h2 class="city-name"></h2>
+          <p class="country-name"></p>
 
-                    <div class="weather">
-                        <div class="widget">
-                            <img src="img/bg.jpeg" alt="" />
-                            <div class="widget-info">
-                                <div class="icon">
-                                    <img src="img/icons/116.png" alt="" />
-                                </div>
-                                <div class="temp">
-                                    <p class="currTemp">23</p>
-                                    <p>°C</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <p>Wind:</p>
-                            <p class="wind"></p>
-                            <hr />
-                            <p>Humidity:</p>
-                            <p class="humidity"></p>
-                            <hr />
-                            <p>Air pressure</p>
-                            <p class="pressure"></p>
-                            <hr />
-                            <p>UV:</p>
-                            <p class="uv"></p>
-                        </div>
-                    </div>
+          <div class="weather">
+            <div class="widget">
+              <img class="city-img" src="" />
+              <div class="widget-info">
+                <div class="temp">
+                  <p class="temp-data"></p>
                 </div>
+                <div class="icon"></div>
+              </div>
             </div>
+            <div class="info">
+              <p>Wind:</p>
+              <p class="wind"></p>
+              <hr />
+              <p>Humidity:</p>
+              <p class="humidity"></p>
+              <hr />
+              <p>Air pressure</p>
+              <p class="pressure"></p>
+              <hr />
+              <p>UV:</p>
+              <p class="uv"></p>
+            </div>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
