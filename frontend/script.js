@@ -11,6 +11,7 @@ async function fetchData(url) {
 
 async function getSearchData(input) {
   let inputField = document.querySelector("#input-name").value;
+  input = inputField.toUpperCase();
   filteredCity = [];
 
   let data = await fetchData(
@@ -25,6 +26,14 @@ async function getSearchData(input) {
   }
   console.log(input);
   console.log(filteredCity);
+
+  for (let i = 0; i < filteredCity.length; i++) {
+    console.log(filteredCity[i]);
+
+    let dataListValue = `<option value="` + filteredCity[i] + `" />`;
+    const dataList = rootElement.querySelector("#filtered-city-names");
+    dataList.innerHTML = dataListValue;
+  }
 }
 
 button.addEventListener("click", function () {
