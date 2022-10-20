@@ -27,7 +27,7 @@ window.addEventListener("load", function () {
             <button></button>
           </div>
         </header>
-        <div class="block-container">
+        <div class="block-container hidden">
           
         </div>
     </div>
@@ -73,6 +73,9 @@ window.addEventListener("load", function () {
               </div>
         </div>
       `;
+    window.setTimeout(function () {
+      dataBlock.classList.remove("hidden");
+    }, 3000);
 
     async function getWeatherData(inputField) {
       let data = await fetchData(

@@ -287,3 +287,7 @@ hr {
   margin-bottom: 5px;
   margin-top: 5px;
 }
+
+.hidden {
+  display: none;
+}
