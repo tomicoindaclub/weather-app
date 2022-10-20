@@ -15,61 +15,6 @@
     />
   </head>
   <body>
-    <div id="root">
-      <div class="container">
-        <header>
-          <div class="titleApp">
-            <div class="logo"></div>
-            <h1>Weather App</h1>
-          </div>
-          <div class="inputField">
-            <form>
-              <!-- <label for="input-name">Name: </label> for="" ide csak inputnak id-ja mehet -->
-              <input
-                id="input-name"
-                placeholder="Write a city here..."
-                type="text"
-                onkeyup="getSearchData()"
-                list="filtered-city-names"
-              />
-              <datalist id="filtered-city-names"> </datalist>
-            </form>
-            <button></button>
-          </div>
-        </header>
-        <div class="block">
-          <div class="city-country">
-            <h2 class="city-name"></h2>
-            <p class="country-name"></p>
-          </div>
-
-          <div class="weather">
-            <div class="widget">
-              <img class="city-img" src="" />
-              <div class="widget-info">
-                <div class="temp">
-                  <p class="temp-data"></p>
-                  <p class="temp-unit">°C</p>
-                </div>
-                <div class="icon"></div>
-              </div>
-            </div>
-            <div class="info">
-              <p class="info-title">Wind:</p>
-              <p class="wind"></p>
-              <hr />
-              <p class="info-title">Humidity:</p>
-              <p class="humidity"></p>
-              <hr />
-              <p class="info-title">Air pressure</p>
-              <p class="pressure"></p>
-              <hr />
-              <p class="info-title">UV:</p>
-              <p class="uv"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="root"></div>
   </body>
 </html>
